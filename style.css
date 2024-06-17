@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+IS:wght@100..400&family=Rowdies:wght@300;400;700&display=swap') ; 
+
+
 *{
 padding: 0%;
 margin: 0%;
 box-sizing: border-box;
+color: white;
+}
 
+:root{
+    --corbotoesh2texto: #ffae00;
+  --arredondamentobordas:10px;
+  --minhafonte: "Rowdies", sans-serif;
 }
 
 body{
@@ -10,6 +19,7 @@ background-image: url(imagens/bg.png);
 /* descomente para aplicar uma imagem sem repeticao */
 /* background-repeat: no-repeat;  */
 /* background-size: cover; */
+text-align: center;
 }
 
 header{
@@ -22,4 +32,53 @@ padding: 15px;
 nav a{
 color: white;
 margin: 0% 10px;
+font-size: 20px;
+font-weight: 100;
+text-decoration: none;
+font-family: var(--minhafonte);
+
+}
+
+h2{
+color: var(--corbotoesh2texto);
+text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.boxproduto{
+background-color: rgba(37, 37, 37, 0.8);
+width: 850px;
+margin: auto;
+border-radius: var(--arredondamentobordas);
+}
+.boximg, .boxTexto{
+display: inline-block;
+vertical-align: middle;
+}
+
+.imagemproduto{
+width: 400px;
+
+}
+
+.boxTexto{
+ width: 400px;
+ text-align: start;
+}
+
+H1,H2,H3,{
+    margin:10px 0px;
+
+}
+
+button{
+background-color: #ffae00;
+padding:15px;
+border-radius: var(--arredondamentobordas);
+border: none;
+width: 150px;
+cursor: pointer;
 }
